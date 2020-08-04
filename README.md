@@ -1,15 +1,15 @@
 # Bpdts Test
 
-## This solutions contains the answer to the test received by email to stewart.barker@gmail.com on 29/07/2020 at 14:45PM
+## This repo contains my answer to the test received by email to stewart.barker@gmail.com on 29/07/2020 at 14:45
 ### The solution was created using .net core 3.1 with Visual Studio 2019 IDE
 
 ### The following 3 main projects make up the solution:
 
 #### Barker.Stewart.Bpdts.Test.LocationApi
-This is the core WebApi project that contains the controller and main functionality to make requests to the bpdts service
+The core WebApi project that contains the controller and main functionality to make requests to the bpdts service
 
 #### Barker.Stewart.Bpdts.Test.Services
-Contains the LocationService used to calculate the distance between 2 coordinates. Note originally I used a common algorithm to calculate this, 
+The service used to calculate the distance between 2 coordinates. Note originally I used a common algorithm to calculate this, 
 however after some research it was preferable to use a common library. The library used replicates the standard functionality in .Net that was
 not available in the latest version of .net Core at the time of creating the solution.
 
@@ -19,10 +19,10 @@ Class library project containing the models used in the solution
 ### The following are unit test projects for the solution (using NUnit and NSubstitute)
 
 #### Barker.Stewart.Bpdts.Test.LocationApi.Tests
-Contains unit tests of the logic in the main project
+Contains unit tests for the main project
 
 #### Barker.Stewart.Bpdts.Test.Services.Tests
-Contains unit tests of the location service
+Contains unit tests for the location service
 
 Example output:
 ```json
@@ -36,3 +36,8 @@ Example output:
 {"id":322,"first_name":"Hugo","last_name":"Lynd","email":"hlynd8x@merriam-webster.com","ip_address":"109.0.153.166","latitude":51.6710832,"longitude":0.8078532},
 {"id":554,"first_name":"Phyllys","last_name":"Hebbs","email":"phebbsfd@umn.edu","ip_address":"100.89.186.13","latitude":51.5489435,"longitude":0.3860497}]
 ```
+
+### To build and run
+Should work on all platforms (mac/windows/linux) tested only on Windows and Mac. Ensure aspnet core 3.1 sdk and runtime is installed (Docker to follow) and cd to the Barker.Stewart.Bpdts.Test.LocationApi project then use:
+* dotnet run
+* Go to browser and navigate to https://localhost:5001/userLocation
