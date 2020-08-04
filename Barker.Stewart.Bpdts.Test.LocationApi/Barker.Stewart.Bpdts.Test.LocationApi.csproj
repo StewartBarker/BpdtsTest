@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Barker.Stewart.Bpdts.Test.LocationService\Barker.Stewart.Bpdts.Test.Services.csproj" />
     <ProjectReference Include="..\Barker.Stewart.Bpdts.Test.Models\Barker.Stewart.Bpdts.Test.Models.csproj" />
     <ProjectReference Include="..\Barker.Stewart.Bpdts.Test.Services\Barker.Stewart.Bpdts.Test.Services.csproj" />
   </ItemGroup>
