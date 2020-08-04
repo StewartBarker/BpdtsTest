@@ -6,7 +6,7 @@
 ### The following 3 main projects make up the solution:
 
 #### Barker.Stewart.Bpdts.Test.LocationApi
-The core WebApi project that contains the controller and main functionality to make requests to the bpdts service
+The core WebApi project that contains the controller and main functionality to make requests to the bpdts api
 
 #### Barker.Stewart.Bpdts.Test.Services
 The service used to calculate the distance between 2 coordinates. Note originally I used a common algorithm to calculate this, 
