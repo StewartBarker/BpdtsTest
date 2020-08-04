@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeoCoordinate.NetStandard1" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Barker.Stewart.Bpdts.Test.Models\Barker.Stewart.Bpdts.Test.Models.csproj" />
+  </ItemGroup>
+
+</Project>
